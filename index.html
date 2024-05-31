@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="https://res.cloudinary.com/debbsefe/image/upload/f_auto,c_fill,dpr_auto,e_grayscale/image_fz7n7w.webp" alt="header-image" class="cld-responsive">
+            <h1 class="form-title">Register Here</h1>
+            <form>
+                <input type="text" value="" id="name" placeholder="Name" required>
+                <div class="beside">
+                    <input type="tel" value="" id="number" placeholder="Phone Number" required>
+                    <select id="gender" required>
+                        <option value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="non-binary">Non-Binary</option>
+                    </select>
+                </div>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <button onclick="addData()" type="button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="parent">
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
